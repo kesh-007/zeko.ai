@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <div className='flex justify-between p-4'>
-        <Image src={"/image.png"} alt="logo" height={50}width={100}/>
+    <div className='flex justify-between p-4 '>
+        <Image src={"/image.webp"} alt="logo" height={10} width={100} className='h-5 mt-1'/>
         <div className='flex gap-6 text-[#242466] max-md:hidden'>
             <Link href={"#"}>About us</Link>
             <Link href={"#"}>Products</Link>
