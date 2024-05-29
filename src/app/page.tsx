@@ -11,7 +11,6 @@ const page = () => {
   const Banner = dynamic(() => import('@/components/Banner'))
   const BackedBy = dynamic(() => import('@/components/BackedBy'))
 
-
   return (
     <div>
       <Header/>

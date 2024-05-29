@@ -78,7 +78,7 @@ const EffortlessSection = () => {
                   role={data.role}
                   content={data.content}
                   className="mt-2"
-                  logo={"/testimonials3.webp"}
+                  logo={"/testimonials2.webp"}
                 />
               </div>
               <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
