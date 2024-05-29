@@ -73,12 +73,12 @@ const socialIcons: SocialIcons = {
 
 const Footer: React.FC = () => {
   return (
-    <div className='bg-[#E6D4FF] p-8 mt-[5rem]  text-[#392D82]'>
-      <div className='flex justify-evenly'>
-        <div className='space-y-2 w-3xl'>
+    <div className='bg-[#E6D4FF] p-8 text-[#392D82]'>
+      <div className='flex flex-col lg:flex-row justify-evenly'>
+        <div className='space-y-2 lg:w-1/3'>
           <Image src={footerData.address.logoSrc} alt='logo' height={50} width={100} />
           <p className='font-bold'>{footerData.address.tagline}</p>
-          <p className='tracking-wide max-w-md text-sm'>{footerData.address.description}</p>
+          <p className='tracking-wide text-sm'>{footerData.address.description}</p>
           <p className='mt-4'>{footerData.address.contact}</p>
           <p className='font-bold mt-3'>FIND US ON</p>
           <div className='flex gap-3'>
@@ -87,19 +87,21 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        {footerData.sections.map((section, index) => (
-          <div key={index} className='space-y-2'>
-            <p className='font-bold'>{section.title}</p>
-            {section.items.map((item, idx) => (
-              <p key={idx}>{item}</p>
-            ))}
-          </div>
-        ))}
+        <div className='flex flex-wrap justify-evenly lg:w-2/3'>
+          {footerData.sections.map((section, index) => (
+            <div key={index} className='space-y-2 mt-4 lg:mt-0 lg:w-1/4'>
+              <p className='font-bold'>{section.title}</p>
+              {section.items.map((item, idx) => (
+                <p key={idx}>{item}</p>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
       <hr className='my-4 text-black' />
-      <div className='flex justify-between'>
+      <div className='flex flex-col lg:flex-row justify-between'>
         <p>{footerData.footerNote.copyright}</p>
-        <p>{footerData.footerNote.madeWith}</p>
+        <p className='mt-2 lg:mt-0'>{footerData.footerNote.madeWith}</p>
       </div>
     </div>
   )

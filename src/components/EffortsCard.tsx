@@ -16,7 +16,7 @@ type ProductsCardProps = {
 
 const EffortsCard: React.FC<ProductsCardProps> = (props) => {
   return (
-    <Card className={`w-[300px] max-md:w-full  ${props.className}`}>
+    <Card className={`w-[300px] h-[340px] max-md:w-full  ${props.className}`}>
       <CardHeader>
         <CardTitle className='text-sm text-gray-500'> {props.content}</CardTitle>
       </CardHeader>

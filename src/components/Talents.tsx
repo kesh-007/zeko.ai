@@ -31,13 +31,13 @@ const Talents = () => {
     return (
         <div className='bg-[#501B88] pb-10 py-4 text-white mt-10 text-center'>
             <h1 className='font-bold pt-5 text-3xl'>Talent Acquisition for every role</h1>
-            <h4 className='px-[15rem] mt-4'>
+            <h4 className='px-[15rem] max-md:p-4 mt-4'>
                 Discover Tailored Talent Acquisition Solutions for Every Role, Designed to Empower Businesses in Streamlining Talent Needs and Accelerating Growth
             </h4>
-            <div className='w-full px-4 flex justify-around mt-10'>
+            <div className='max-md:flex-col  px-4 flex justify-around mt-10'>
                 {
                     data.map((datum, index) => (
-                        <div key={index} className='flex flex-col items-center'>
+                        <div key={index} className=' max-md:mt-3 flex flex-col items-center'>
                             <div className={`flex justify-center items-center ${datum.color} p-2 w-[3rem] h-[3rem] rounded-full`}>
                                 {datum.icon}
                             </div>

@@ -98,3 +98,9 @@
   position: absolute;
   animation: vertical-scroll 10s linear infinite;
 }
+
+
+html, body {
+  overflow-x: none;
+  display: hidden;
+}

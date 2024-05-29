@@ -5,7 +5,7 @@ import ProductsCard from './ProductsCard'
 const Advantages = () => {
   return (
     <div className='flex justify-between max-md:flex-col'>
-        <div className='h-screen flex flex-col  justify-center items-center px-20 max-w-2xl'>
+        <div className=' my-5 flex flex-col  justify-center items-center md:px-20 max-w-2xl'>
             <div className='text-start'>
             <h1 className='text-[#4F33CC] text-4xl font-bold mb-2 '>The Unmatched Advantage with Zeko AI</h1>
             <h5 className='font-bold text-gray-500 mb-3'>Explore the Acquisition intelligence in action</h5>

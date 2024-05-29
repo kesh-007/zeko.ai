@@ -1,6 +1,4 @@
 import React from 'react'
-import { Button } from './ui/button'
-import ProductsCard from './ProductsCard'
 import EffortsCard from './EffortsCard'
 
 const EffortlessSection = () => {
@@ -12,7 +10,7 @@ const EffortlessSection = () => {
   }
   return (
     <div className='flex justify-between max-md:flex-col container'>
-        <div className='h-screen flex flex-col  justify-center items-center px-10 max-w-6xl'>
+        <div className=' flex flex-col  justify-center items-center md:px-10 max-w-6xl'>
             <div className='text-start'>
             <h1 className='text-[#4F33CC] text-5xl font-bold mb-2 '>Effortless Acquisition</h1>
             <div className='flex gap-3 mt-5'>
@@ -26,11 +24,11 @@ const EffortlessSection = () => {
         <div className='px-2  mt-20 max-md:px-0 max-md:mt-0 max-md:w-full'>
             <div className='flex gap-3 max-md:flex-col '>
             <EffortsCard name={data.name} role={data.role} content={data.content} className='' />
-            <EffortsCard name={data.name} role={data.role} content={data.content} className=' mt-4 ' />
+            <EffortsCard name={data.name} role={data.role} content={data.content} className=' mt-6 ' />
             </div>
             <div className='flex gap-3 max-md:flex-col'>
             <EffortsCard name={data.name} role={data.role} content={data.content} className=' mt-2 ' />
-            <EffortsCard name={data.name} role={data.role} content={data.content} className='mt-2  ' />
+            <EffortsCard name={data.name} role={data.role} content={data.content} className='mt-4  ' />
             </div>
         </div>
 
