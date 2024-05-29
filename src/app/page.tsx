@@ -1,14 +1,17 @@
-import Advantages from '@/components/Advantages'
-import BackedBy from '@/components/BackedBy'
-import Banner from '@/components/Banner'
-import Customers from '@/components/Customers'
-import EffortlessSection from '@/components/EffortlessSection'
-import Header from '@/components/Header'
-import Products from '@/components/Products'
-import Talents from '@/components/Talents'
 import React from 'react'
+import dynamic from 'next/dynamic'
 
 const page = () => {
+  const Header = dynamic(() => import('@/components/Header'))
+  const Customers = dynamic(() => import('@/components/Customers'))
+  const Products  = dynamic(() => import('@/components/Products'))
+  const Advantages = dynamic(() => import('@/components/Advantages'))
+  const Talents = dynamic(() => import('@/components/Talents'))
+  const EffortlessSection = dynamic(() => import('@/components/EffortlessSection'))
+  const Banner = dynamic(() => import('@/components/Banner'))
+  const BackedBy = dynamic(() => import('@/components/BackedBy'))
+
+
   return (
     <div>
       <Header/>

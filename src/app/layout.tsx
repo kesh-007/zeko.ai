@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zeko AI",
+  title: "Zeko.ai",
   description: "Zeko Hunt simplifies IT hiring by expertly finding skilled candidates from vast data pools. Filling critical roles is now faster and easier",
 };
 
