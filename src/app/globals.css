@@ -104,3 +104,46 @@ html, body {
   overflow-x: none;
   display: hidden;
 }
+
+.scrolling-container {
+  overflow: hidden;
+  height: 500px; /* Adjust this value as needed */
+  position: relative;
+}
+
+.scrolling-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  animation-play-state: running; /* Ensure the animation starts running */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scrolling-container::before,
+.scrolling-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px; /* Adjust this value as needed */
+  pointer-events: none; /* Ensure the gradient doesn't block mouse events */
+}
+
+.scrolling-container::before {
+  top: 0;
+  background: linear-gradient(to bottom, white, transparent);
+}
+
+.scrolling-container::after {
+  bottom: 0;
+  background: linear-gradient(to top, white, transparent);
+}

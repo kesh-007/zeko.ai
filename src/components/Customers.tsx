@@ -16,7 +16,7 @@ const Customers = () => {
         
         {/* @ts-ignore */}
         <marquee>
-        <div className='flex gap-[5rem] mt-10 ml-10 max-md:gap-4 max-md:ml-0 max-md:overflow-x-auto max-md:scrollbar-hide'>
+        <div className='flex gap-[5rem] mt-10 ml-10 max-md:gap-4 max-md:ml-0  '>
           {imageData.map((image, index) => (
             <Image 
               key={index} 

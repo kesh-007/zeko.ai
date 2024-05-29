@@ -42,7 +42,7 @@ const Talents = () => {
                                 {datum.icon}
                             </div>
                             <h1 className='text-xl font-bold mt-4'>{datum.heading}</h1>
-                            <p className='text-center mt-2 text-gray-300'>{datum.content}</p>
+                            <p className='text-center tracking-tight mt-2 text-gray-300'>{datum.content}</p>
                         </div>
                     ))
                 }

@@ -6,12 +6,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from 'next/image';
 
 type ProductsCardProps = {
   content: string;
   className:string;
   name:string;
   role:string
+  logo:string
 };
 
 const EffortsCard: React.FC<ProductsCardProps> = (props) => {
@@ -28,13 +30,13 @@ const EffortsCard: React.FC<ProductsCardProps> = (props) => {
       </CardContent>
       <CardFooter className='flex justify-between'>
         <div>
-        <p>{props.name}</p>
+        <p className='text-gray-500'>{props.name}</p>
 
-        <p className='text-xl'>{props.role}</p>
+        <p className='text-xl font-bold'>{props.role}</p>
 
         </div>
-      <div className='border h-10  inline-block '>
-            <p className='font-bold  p-2'>Airmeet</p>
+      <div className='border inline-block '>
+            <Image src={props.logo} alt='Logo' width={70} height={70} className='font-bold  p-2'/>
         </div>
 
       </CardFooter>

@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         <div className='space-y-2 lg:w-1/3'>
           <Image src={footerData.address.logoSrc} alt='logo' height={50} width={100} />
           <p className='font-bold'>{footerData.address.tagline}</p>
-          <p className='tracking-wide text-sm'>{footerData.address.description}</p>
+          <p className='tracking-tighter	 w-xl text-sm'>{footerData.address.description}</p>
           <p className='mt-4'>{footerData.address.contact}</p>
           <p className='font-bold mt-3'>FIND US ON</p>
           <div className='flex gap-3'>

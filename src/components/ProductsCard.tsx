@@ -16,12 +16,12 @@ type ProductsCardProps = {
 
 const ProductsCard: React.FC<ProductsCardProps> = (props) => {
   return (
-    <Card className={`w-[250px] max-md:w-full max-md:h-[300px] h-[250px] ${props.className}`}>
+    <Card className={`w-[300px] max-md:w-full max-md:h-[300px] h-[300px] ${props.className}`}>
       <CardHeader>
-        <CardTitle>{props.icon} {props.heading}</CardTitle>
+        <CardTitle className='flex gap-3'><p>{props.icon}</p> <p>{props.heading}</p></CardTitle>
       </CardHeader>
       <CardContent>
-        <p>{props.content}</p>
+        <p className='font-semibold'>{props.content}</p>
       </CardContent>
       <CardFooter>
       </CardFooter>
