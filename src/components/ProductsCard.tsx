@@ -6,13 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ProductsCardProps } from '@/types';
 
-type ProductsCardProps = {
-  icon: React.ReactNode;
-  heading: string;
-  content: string;
-  className:string
-};
 
 const ProductsCard: React.FC<ProductsCardProps> = (props) => {
   return (

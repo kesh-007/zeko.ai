@@ -6,3 +6,4 @@ export const imageData = [
     { src: "/company5.png", alt: "company 5", width: 200, height: 150 }
   ];
   
+  

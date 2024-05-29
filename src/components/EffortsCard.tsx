@@ -7,16 +7,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from 'next/image';
+import { TestimonialsCardProps } from '@/types';
 
-type ProductsCardProps = {
-  content: string;
-  className:string;
-  name:string;
-  role:string
-  logo:string
-};
 
-const EffortsCard: React.FC<ProductsCardProps> = (props) => {
+const EffortsCard: React.FC<TestimonialsCardProps> = (props) => {
   return (
     <Card className={`w-[300px] h-[340px] max-md:w-full  ${props.className}`}>
       <CardHeader>

@@ -1,34 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Instagram, Facebook, Linkedin, X } from 'lucide-react';
-
-type SocialIcons = {
-  [key: string]: JSX.Element;
-};
-
-type Address = {
-  logoSrc: string;
-  tagline: string;
-  description: string;
-  contact: string;
-  social: string[];
-};
-
-type Section = {
-  title: string;
-  items: string[];
-};
-
-type FooterNote = {
-  copyright: string;
-  madeWith: string;
-};
-
-type FooterData = {
-  address: Address;
-  sections: Section[];
-  footerNote: FooterNote;
-};
+import { FooterData, SocialIcons } from '@/types';
 
 const footerData: FooterData = {
   address: {
