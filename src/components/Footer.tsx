@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <hr className='my-4 text-black' />
-      <div className='flex flex-col lg:flex-row justify-between'>
+      <div className='flex flex-col lg:flex-row justify-between max-md:text-center'>
         <p>{footerData.footerNote.copyright}</p>
         <p className='mt-2 lg:mt-0'>{footerData.footerNote.madeWith}</p>
       </div>
